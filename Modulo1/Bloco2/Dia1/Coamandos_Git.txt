@@ -23,3 +23,6 @@ git add - Seleciona um arquivo ou arquivos para serem commitados
 git log - Diz o autor do commit, oque ele fez e quando e diz se o main está la ou não o estado do arquivo.
 
 git diff - Diz o que está acontecendo com o arquivo naquele momento
+
+git push - Mandas as coisas pro Git hub
+     git + push + apelido do repositório + master
