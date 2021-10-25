@@ -1,0 +1,138 @@
+ls - Lista todos os arquivos e diretórios dentro daquele diretório. Pode ser executado a qualquer momento.
+    ls sozinho - Lista
+    ls -A - Lista também pastas ocultas
+    ls * - Mostra tudo dentro do diretório incluindo arquivos dentro de outros diretórios
+    ls -l - Mostra os arquivos e suas permissões
+
+cd - Permite entrar em outros diretórios (Change directory)
+    cd + Nome do diretório
+    cd .. - Volta no diretório anterior
+
+clear - Limpa a tela do terminal
+     CTRL + L -mesma função
+
+mkdir - Make directory, cria um diretório (pasta de arquivos)
+     mkdir + Nome da pasta
+
+pwd - Mostra o diretório completo, o caminho completo até chegar no diretório. Caminho a aprtir do root até onde vc está.
+
+cp - Copia um arquivos
+     cp + nome do arquivo + nome dad cópia
+
+cat - Abre um arquivo, mostra o que ele tem de informação, adiciona novos termos ao arquivo ou substitui o que já tem la.
+    cat + nome do arquivo - exibe oq tem nele
+    cat + > + nome do arquivo - substitui o que tem no arquivo
+    cat + >> + nome do arquivo - adiciona coisas ao fim do arquivo
+    cat + nome do aquivo 1 + nome do arquivo 2 + > + nome do arquivo conjunto – Pega todos os dados dos dois primeiros arquivos e acrescenta nesse terceiro arquivo na ordem em que os arquivos foram colocados logo após o cat.
+    cat + arquivo1 + >> + arquivo2 - Pega todos os dados do arquivo 1 e joga dentro do arquivo 2.
+    CTRL + D - Fecha o comando cat
+
+mv - move um arquivo de pasta
+    mv + nome do arquivo + caminho completo até onde vc quer o arquivo
+
+rm - Remove um arquivo ou diretório
+    rm + nome do arquivo - remove um arquivo
+    rmdir + nome da pasta - remove uma pasta vazia
+    rm -rf + nome da pasta - remove pasta sem confirmação mesmo que tenha conteudo
+    rm -rf *.txt – remove todos os arquivos txt da pasta
+
+less - exibe partes do conteúdo, na forma de páginas
+     Barra de espaço - passa a página
+     Q- sai da visualização
+     enter - anda linha por linha
+     / + o que quer buscar - Busca tudo que tem aquelas palavras chab=ve dentro do arquivo
+
+head - Da as primeiras 10 linhas de um arquivo
+     head + nome do arquivo
+     head -5 + nome do arquivo - Mostra as primeiras 5 linhas do arquivo, o número pode sempre mudar
+
+tail - Da as ultimas linhas do arquivo
+     tail + nome do arquivo - mostra as ultimas 10 linhas
+     tail -5 + nome do arquivo - mostra as ultimas 5 linhas do arquivo
+
+grep - Busca termos dentro de arquivos
+    grep + Oq quer buscar + nome do arquivo
+    grep -i + Oque quer buscar + nome do arquivo - busca sem ser case sensitive
+    grep -iv + Oq quer buscar + nome do arquivo - mostra tudo do arquivo menos o que foi buscado
+    grep -in + Oq quer buscar + nome do arquivo - Aparece o que vc procura e a linha dentro do arquivo em que ela se encontra
+    grep -ic + Oq quer buscar + nome do arquivo - Diz quantas vezes aquela palavra é encontrada no arquivo
+
+wc - Word Count, conta o número de linhas do arquivo, quantidade de palavras e a quantidade de caracteres / bytes do arquivo, repectivamente
+     wc + nome do arquivo
+     wc -w + nome do arquivo - passa o número de palavras do arquivo
+     wc -l + nome do arquivo - passa o número de linhas do arquivo
+     wc -c + nome do arquivo - passa o número de caracteres do arquivo
+
+man - Manual do comando
+     man + comando
+
+touch - Cria um novo arquivo
+     touch + nome do arquivo e formato
+
+code - Abre o VS Code para inserir valores nos arquivos txt
+     code + nome do arquivo
+
+? - Substitui um caractere quando não lembramos algo do diretório ou arquivo
+
+what is - Diz o que o comando faz
+     whatis + comando
+
+apropos - Diz todos os comandos que envolvam oq vc quer fazer
+     apropos + oq quer fazer
+
+sort - Ordena os valores dos dados no output, não altera o arquivo, só oq é mostrado na tela
+     sort + < + nome do arquivo - ordena os arquivos em ordem crescente
+     sort -r + < + nome do arquivo - rdena os arquivos em ordem decrescente
+     sort + < + nome do arquivo 1 + > + nome de arquivo 2 – Eu primeiro ordeno os dados presentes no arquivo 1 e em seguida insiro esses dados ordenados dentro do arquivo 2
+
+who - me diz quem está usando o sistema no momento
+
+| - pipe, une comandos, fazendo primeiro o que pede a esquerda depois a direita
+
+echo - coloca na tela do terminal o que for escrito ao lado
+     echo + Oq quer escrever
+     echo + o que quer escrever + > + nome do arquivo - coloca o que sera escrito dentro de um arquivo
+
+history - mostra o histórico de comandos digitados
+      history | tail -3 - mostra os 3 ultimos comandos digitados
+
+find - pesquisa em diretorios e arquivos de acordo com parâmetros passados a ele
+      find + Onde buscar + parametro buscado + objeto da busca em aspas simples
+      ex: find . -type ".txt"
+      -type d - Localiza todos os diretórios
+      -type f - Localiza todos os arquivos
+      -name - Localiza por nome o arquivo
+
+chmod - Muda as permissões que um usuário / grupo / outros usuários podem tem sobre um arquivo ou diretório
+       chmod u - Alterações na permissão de usuário
+       chmod g - Alterações na permissão de grupo
+       chmod o - Alterações na permissão de outros usuários
+       chmod a - Alterações na permissão de todos
+       menos - retira permissão r, w, x ou todas
+       mais - da permissão r, w, x ou todas
+
+ps – Apresenta todos os processos sendo executados no momento no UNIX
+
+Sleep – para o terminal durante um determinado tempo
+     sleep + periodo de tempo em que o terminal ficará parado (medido em segundos)
+
+& - Deixa o processo em Background
+     ex: sleep 20 &
+
+CTRL + Z – Suspende um processo em execução.
+
+Bg – coloca o ultimo processo executado em background
+     bg + PID do processo
+     bg + % + n° na lista de execussões
+
+jobs – Para visualizar todos os processos que estão sendo executados em segundo plano ou que estão suspensos
+
+fg – Retoma um processo que foi suspenso
+    fg + % + n° na lista de execuções (Ex: fg %2)
+
+CTRL + C – Finaliza um processo em execução
+
+kill – Finaliza um processo em Background
+      kill + % + n° na lista de execuções (Ex: kill %2)
+      kill + n° do PID
+      kill -9 + n° do PID – Força o processo a parar mesmo q ele diga q não pode.
