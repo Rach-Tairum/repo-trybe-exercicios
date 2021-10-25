@@ -1,0 +1,36 @@
+git clone - copia um repositório já existente no github
+      git + clone + url do arquivo git
+
+git log - Mostra todo o histório de commits realizados nas branchs
+
+git remove - remove / apaga arquivos
+      git + rm + nome do arquivo que quer remover
+
+git log ressussita - Volta arquivos que foram removidos ou versões anteriores desses
+      git + log + --diff-filter=D --summary
+
+      7f9e
+      1354 - arquivo fantasma
+
+git checkout 2- Voltando para uma commit anterior
+     git + checkout + identificador do commit + ~1(pra ser o commit onde estamos) + nome do arquivo
+
+
+git ignore - faz com que o git ignore alguns arquivos
+     criar o arquivo .gitignore e colocar nele o que deve ser ignorado
+
+git commit -a - Faz um commit direto
+    git + commit -a + -m + o que o commit faz
+
+git branch --all - mostra todos os branchs tanto locais quanto remotos
+
+git checkout -b + nome da branch - cria uma nova branch e entra já nela
+
+git push -u + apelido do seu repositório local + nome da branch - da push e leva junto o caminho da conexãoo assim não precisa ficar repetindo o comando todo
+
+git pull - garante q o remoto e o local estão no mesmo local, inclusive atualizando a main
+
+git fetch --prume - baixa as novidades do repositório remoto e apaga os repositórios remotos que não existem mais
+
+git branch -d + nome da branch - deleta uma branch de forma local
+
