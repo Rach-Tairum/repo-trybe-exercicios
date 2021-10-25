@@ -1,0 +1,25 @@
+git branch - Cria uma nova branch (arquivo editável)
+     git + branch + nome da branch
+     git + branch -d + nome da branch - apaga uma branch
+     git + branch + nome da branch + identificador do commit que se quer ir - Volta em algum commit passado e começa a partir dai
+
+git checkout - Sai de uma branch para outra
+     git + checkout + nome da branch destino
+
+git commit - Cria uma commit (arquivo fixo de alterações)
+     git + commit -m - oq tem naquela commit  entre ""
+
+git init - Inicia um repositório git na pasta onde se está
+
+git merge - Mescla duas Branchs, normalmente pra atualizar a branche master
+     git + merge + Branch destino
+
+git status - Diz o estado atual do seu repositório
+
+git add - Seleciona um arquivo ou arquivos para serem commitados
+      git + add + nome do arquivo - add um arquivo especifico
+      git + add + . - add todos os arquivos da pasta
+
+git log - Diz o autor do commit, oque ele fez e quando e diz se o main está la ou não o estado do arquivo.
+
+git diff - Diz o que está acontecendo com o arquivo naquele momento
