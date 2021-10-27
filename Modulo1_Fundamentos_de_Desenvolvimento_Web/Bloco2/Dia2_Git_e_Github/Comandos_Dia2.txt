@@ -30,7 +30,7 @@ git push -u + apelido do seu repositório local + nome da branch - da push e lev
 
 git pull - garante q o remoto e o local estão no mesmo local, inclusive atualizando a main
 
-git fetch --prume - baixa as novidades do repositório remoto e apaga os repositórios remotos que não existem mais
+git fetch --prune - baixa as novidades do repositório remoto e apaga os repositórios remotos que não existem mais
 
 git branch -d + nome da branch - deleta uma branch de forma local
 
