@@ -1,0 +1,41 @@
+Códigos Bloco 3
+HTML:
+    <!DOCTYPE html> - Informação para garantir que  nosso navegador sabe o que estamos querendo com aquele documento. Pra que o navegador saiba que se trata de um documento html e principalmente um html 5 eu tenho que declarar que tipo de documento será realizado.
+
+    <html lang=”pt-br”> - Aqui começamos a ver o documento html de fato, que é a araiz de todo a sua página html, então tudo que tiver escrito daqui pra baixo estará contido dentro do html. Dentro dessa parte ainda temos a definição de qual a linguagem que a página vai estar usando, no nosso caso portugues do Brasil.
+
+    <head> - Contem as configurações da página, desde links para letras, design da página, metadados como o o tipo de teclado utilizado (UTF-8) e titulo no navegador.
+
+    <h1> - título máximo que vc pode ter na sua página, o título principal.
+
+    <h2> - subtitulo ou titulo com uma importância um pouco menor que o principal.
+
+    <hn> H1, h2, h3, h4, h5 e h6 são os headings da nossa página, eles criam seções dentro da nossa página.
+
+    <p> - parágrafo. Dentro da tag vc coloca o conteúdo da sua página.
+
+    <br> - quebra a linha do texto deixando o parágrafo mais agradavel. Pode ser repetida várias vezes para aumentar o número de quebras de linha.
+
+    <strong> - Coloca em negrito o que está dentro dele.
+
+    <em> - Coloca em itálico.
+
+    <ul> - unorder list, da a estrutura de uma lista. Lista não ordenada. Coloca um pontinho na frente dos itens da lista.
+
+    <ol> order list, também da estrutura de uma lista. Lista ordenada. Coloca um número pra cada item da lista dando a eles uma ordem.
+
+    <li> onde colocamos os itens da lista, cada li representa um item da lista
+
+    <img> tag q representa uma imagem, mas precisa informar qual imagem que quer ser exibida.
+        src - search da fonte da imagem.
+        href - referencia de onde está a foto, seja um url ou caminho dentro da maquina até a foto.
+        alt - acrescenta descrição da imagem para pessoas deficientes visuais ou quando a imagem não carrega
+    
+    <a> - tag de ancora. Precisa ser fechada.
+        href=”link” - coloca um hiperlink na ancora para linkar com links internos e externos.
+        target=”_blank” - leva o link externo para uma nova aba em branco
+
+    <hr> - coloca uma linha divisória entre as seções fazendo uma espécie de separação
+
+    
+
