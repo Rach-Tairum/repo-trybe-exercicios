@@ -1,0 +1,47 @@
+div:hover {
+    border-style: solid;
+    border-color: crimson;
+}
+.primária {
+    background-color: blue;
+    font-style: italic;
+}
+
+.secundária {
+    background-color: chocolate;
+}
+
+.complementar {
+    background-color: darkmagenta;
+    font-size: 3em;
+    font-style: italic;
+}
+
+.escura {
+    background-color: darkslategrey;
+}
+
+.clara{
+    background-color: khaki;
+    font-style: italic;
+}
+
+.primária h3{
+    color: white;
+}
+
+.secundária h3{
+    color: lightpink;
+}
+
+.complementar h3{
+    color: lime;
+}
+
+.escura h3{
+    color: gray;
+}
+
+.clara h3{
+    color: blueviolet;
+}
