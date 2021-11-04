@@ -1,0 +1,39 @@
+ol li {
+    background-color: yellow;
+}
+
+.par {
+    color: green;
+}
+
+.impar {
+    text-transform: uppercase;
+}
+
+h1, h3 {
+    color: red;
+}
+
+h1 em {
+    border: 1px solid black;
+    font-size: 40px;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em{
+    font-weight: bold;
+}
+.list {
+    color: blue;
+}
+.java {
+    background-color: pink;
+}
+
+ul li a:hover{
+    font-weight: bold;
+    color: grey;
+}

@@ -28,7 +28,6 @@ HTML:
 
     <img> tag q representa uma imagem, mas precisa informar qual imagem que quer ser exibida.
         src - search da fonte da imagem.
-        href - referencia de onde está a foto, seja um url ou caminho dentro da maquina até a foto.
         alt - acrescenta descrição da imagem para pessoas deficientes visuais ou quando a imagem não carrega
     
     <a> - tag de ancora. Precisa ser fechada.
@@ -37,5 +36,5 @@ HTML:
 
     <hr> - coloca uma linha divisória entre as seções fazendo uma espécie de separação
 
-    
+
 
