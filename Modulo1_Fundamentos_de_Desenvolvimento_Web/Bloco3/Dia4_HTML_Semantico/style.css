@@ -3,7 +3,7 @@ body{
 }
 
 .header{
-    background-color: sandybrown;
+    background-color: rgb(250, 179, 74);
     color: white;
     padding: 0px;
     margin-top: 0px;
@@ -15,4 +15,20 @@ body{
     font-size: 30px;
     padding: 40px 40px;
     margin: 0px;
+}
+
+.indice{
+    display: flex;
+    list-style: none;
+    background-color:rgb(245, 211, 138);
+    margin-top: 0px;
+    margin-bottom: 90px;
+    padding: 10px 10px;
+}
+
+.indice li{
+    font-size: 20px;
+    padding: 10px 30px;
+    color:rgb(158, 116, 24);
+    font-weight: 600;
 }
