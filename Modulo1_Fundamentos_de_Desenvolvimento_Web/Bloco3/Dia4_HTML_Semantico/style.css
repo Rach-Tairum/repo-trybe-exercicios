@@ -1,0 +1,18 @@
+body{
+    margin: 0px;
+}
+
+.header{
+    background-color: sandybrown;
+    color: white;
+    padding: 0px;
+    margin-top: 0px;
+    border-top: 0px;
+    margin-block-start:0px;
+}
+.header h1{
+    text-align: center;
+    font-size: 30px;
+    padding: 40px 40px;
+    margin: 0px;
+}
