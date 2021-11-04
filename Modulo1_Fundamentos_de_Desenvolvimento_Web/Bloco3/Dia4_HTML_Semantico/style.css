@@ -82,7 +82,7 @@ body{
 .barra_lateral{
     float: right;
     background-color: rgb(245, 211, 138);
-    padding: 190px 50px;
+    padding: 90px 20px;
     font-size: 20pt;
     font-family: monospace;
     margin-top: 100px;
