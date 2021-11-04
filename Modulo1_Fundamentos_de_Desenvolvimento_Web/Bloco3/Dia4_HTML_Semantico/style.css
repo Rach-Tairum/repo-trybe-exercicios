@@ -63,7 +63,6 @@ body{
 
 .texto p{
     padding: 30px;
-    border: 1px solid;
     margin-right: 30px;
 }
 
@@ -95,4 +94,15 @@ body{
     margin-top: 5px;
     margin-left: 20px;
     float: right;
+}
+
+.referencias{
+    font-family: sans-serif;
+    color: rgb(41, 33, 22);
+    margin: 5px 5px;
+}
+
+.referencias li{
+    display: inline-block;
+    padding: 20px;
 }
