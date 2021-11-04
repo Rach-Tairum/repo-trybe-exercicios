@@ -49,3 +49,30 @@ body{
     font-family: sans-serif;
     color: rgb(102, 57, 19);
 }
+
+.texto{
+    line-height: 35px;
+    text-align: justify;
+}
+.texto h3{
+    font-family: sans-serif;
+    color: rgb(102, 57, 19);
+    margin-left: 20px;
+}
+
+.texto p{
+    padding: 30px;
+}
+
+.tabela{
+    border: 1px double black;
+    border-collapse: separate;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.tabela th, td{
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-align: center;
+}
