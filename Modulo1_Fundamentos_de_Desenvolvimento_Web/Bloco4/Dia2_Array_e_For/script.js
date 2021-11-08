@@ -52,3 +52,26 @@ console.log(menu);
 
 // FOR
 
+var numero = 9;
+
+for (var contador = 1; contador <= 9; contador ++) {
+    console.log (' ');
+    console.log (contador * numero);
+}
+
+let cars = ["Saab", "Volvo", "BMW"];
+
+for (let index = 0; index < cars.length; index += 1) {
+  console.log(cars[index]);
+}
+
+// Exercício
+
+/* Utilize o for para imprimir os elementos da lista groceryList com o console.log()*/
+
+let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+
+for(var listaCompras = 0; listaCompras < groceryList.length; listaCompras += 1) {
+    console.log (groceryList [listaCompras]);
+}
+
