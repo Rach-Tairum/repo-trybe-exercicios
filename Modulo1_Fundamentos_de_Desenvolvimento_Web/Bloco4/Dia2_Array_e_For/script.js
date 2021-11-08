@@ -65,13 +65,43 @@ for (let index = 0; index < cars.length; index += 1) {
   console.log(cars[index]);
 }
 
+console.log (typeof index)
+
 // Exercício
 
 /* Utilize o for para imprimir os elementos da lista groceryList com o console.log()*/
 
 let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+let listaAlfabetica = groceryList.sort();
 
-for(var listaCompras = 0; listaCompras < groceryList.length; listaCompras += 1) {
-    console.log (groceryList [listaCompras]);
+for(var listaCompras = 0; listaCompras < listaAlfabetica.length; listaCompras += 1) {
+    console.log (listaAlfabetica [listaCompras]);
 }
 
+// FOR / OF
+
+let word = 'Hello';
+for (let letter of word) {
+  let separacao = letter;
+  console.log(separacao);
+}
+
+// Exercicio
+
+/* Utilize o for/of para imprimir os elementos da lista names com o console.log() : */
+
+let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+
+for (let listaNomes of names) {
+    console.log (listaNomes);
+}
+
+// letras separadas dentro de um array
+
+let word = 'Hello';
+
+for (i = 0; i < word.length; i += 1) {
+    let letras = [];
+    letras.push(word [i]);
+    console.log (letras);
+}
