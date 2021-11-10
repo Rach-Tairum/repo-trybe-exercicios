@@ -54,3 +54,23 @@ for (index = 0; index <= n; index += 1){
     asteristicos += '*';
     console.log (espacos + asteristicos);
 }
+
+/* Faça um programa que diz se um número definido numa variável é primo ou não.
+Um número primo é um número que só é divisível por 1 e por ele mesmo, ou seja, a divisão dele com quaisquer outros números dá resto diferente de zero */
+
+let n = 4;
+let array =[];
+
+for (i = 1; i <= n; i += 1){
+    let divisao = n % i;
+    
+    if (divisao === 0){
+        array.push (i);
+    }
+}
+
+if (array.length === 2) {
+    console.log ('Esse número: ' + n + ' é primo.');
+} else {
+    console.log ('Esse número: ' + n + ' não é primo.')
+}
