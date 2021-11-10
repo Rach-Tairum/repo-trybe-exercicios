@@ -27,12 +27,12 @@ let n = 5;
 let asteristicos = '';
 
 for (index = 0; index <= n; index += 1){
-        asteristicos += '*';
-        let espacos = '';
+    asteristicos += '*';
+    let espacos = '';
 
-        for (i = index; i < n; i += 1){
-            espacos += ' ';
-        }
+    for (i = index; i < n; i += 1){
+        espacos += ' ';
+    }
 
     console.log (espacos + asteristicos);
 }
@@ -40,15 +40,17 @@ for (index = 0; index <= n; index += 1){
 
 /* 4- Depois, faça uma pirâmide com n asteriscos de base: */
 
-let n = 5;
-let asteristicos = '';
+let n = 1;
+let asteristicos = '*';
+console.log (' ' + ' ' + ' ' + asteristicos);
 
-for (i = 0; i <= n; i += 1){
+for (index = 0; index <= n; index += 1){
+    let espacos = '';
 
-    if (i % 2 === 0) {
-        console.log ('_')
-    } else{
-        
+    for (i = index; i <= n; i += 1){
+        espacos += ' ';
     }
-    
+    asteristicos += '*';
+    asteristicos += '*';
+    console.log (espacos + asteristicos);
 }
