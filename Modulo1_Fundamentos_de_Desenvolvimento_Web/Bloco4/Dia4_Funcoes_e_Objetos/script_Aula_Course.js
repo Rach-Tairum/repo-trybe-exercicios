@@ -109,4 +109,48 @@ let moradores = [
   console.log ('A jogadora ' + player.name + ' ' + player.lastName + ' foi eleita a melhor do mundo por ' + player.bestInTheWorld.length + ' vezes.');
 
   console.log ('A jogadora possui ' + player.medals.golden + ' medalhas de ouro e ' + player.medals.silver + ' medalhas de prata.')
+
+  // For ... In
+
+  // Exemplo 1: o código que mostra as marcas de carros presentes em um Array é:
+
+  let cars = ['Saab', 'Volvo', 'BMW'];
+
+for (let index in cars) {
+  console.log(cars[index]);
+}
+
+// Exemplo 2: Um outro exemplo é a iteração nas chaves de um objeto:
+
+let car = {
+    type: 'Fiat',
+    model: '500',
+    color: 'white',
+  };
   
+  for (let index in car) {
+    console.log(index, car[index]);
+  }
+
+  // Exercícios
+
+  let names = {
+    person1: 'João',
+    person2: 'Maria',
+    person3: 'Jorge' 
+  };
+
+  for( let key in names){
+      console.log ('Olá ' + names[key] + '!')
+  }
+
+
+  let car = {
+    model: 'A3 Sedan',
+    manufacturer: 'Audi',
+    year: 2020
+  };
+
+  for (let key in car){
+    console.log (key, car[key]);
+  }
