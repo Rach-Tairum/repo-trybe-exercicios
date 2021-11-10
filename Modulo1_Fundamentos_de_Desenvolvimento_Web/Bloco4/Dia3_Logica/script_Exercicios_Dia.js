@@ -29,10 +29,9 @@ let asteristicos = '';
 for (index = 0; index <= n; index += 1){
         asteristicos += '*';
         let espacos = '';
-        
-        for (i = n; i > 0; i -= 1){
-            let espacos = '';
-            espacos = '_ ';
+
+        for (i = index; i < n; i += 1){
+            espacos += ' ';
         }
 
     console.log (espacos + asteristicos);
