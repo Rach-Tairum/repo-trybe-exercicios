@@ -154,3 +154,77 @@ let car = {
   for (let key in car){
     console.log (key, car[key]);
   }
+
+
+  // Funções
+
+  // Exemplo 1
+
+  // Sem função
+let nome = 'João';
+
+console.log('Bom dia, ' + nome);
+
+
+// Com função
+function bomDiaTryber(nome) {
+  console.log('Bom dia, ' + nome);
+}
+
+bomDiaTryber('João'); // Bom dia, João
+bomDiaTryber('Julia'); // Bom dia, Julia
+bomDiaTryber('Marcelo'); // Bom dia, Marcelo
+
+// Exemplos 2 e 3: Veja dois exemplos de funções sem parâmetros:
+
+function bomDia() {
+    return 'Bom dia!';
+  }
+  
+  console.log(bomDia()); // Bom dia!
+
+
+
+let status = 'deslogado';
+
+function logarDeslogar() {
+  if (Status === 'deslogado') {
+    Status = 'logado';
+  } else {
+    Status = 'deslogado';
+  }
+}
+
+console.log(Status); // deslogado
+
+logarDeslogar();
+console.log(Status); // logado
+
+logarDeslogar();
+console.log(Status); // deslogado
+
+console.log('O usuário está ' + Status); // O usuário está deslogado
+
+// Exemplos 5 e 6: E agora exemplos de funções usando parâmetros:
+
+function soma(a, b) {
+    return a + b;
+  }
+  
+  console.log(soma(5, 2)); // 7
+
+  function maiorNum(primeiroNum, segundoNum) {
+    if (primeiroNum > segundoNum) {
+      return primeiroNum + ' é maior que ' + segundoNum;
+    } else if (segundoNum > primeiroNum) {
+      return segundoNum + ' é maior que ' + primeiroNum;
+    } else {
+      return 'Os números são iguais';
+    }
+  }
+  
+  console.log(maiorNum(10, 20)); // 20 é maior que 10
+  console.log(maiorNum(2, -5)); // 2 é maior que -5
+  console.log(maiorNum(1, 1)); // Os números são iguais
+
+  
