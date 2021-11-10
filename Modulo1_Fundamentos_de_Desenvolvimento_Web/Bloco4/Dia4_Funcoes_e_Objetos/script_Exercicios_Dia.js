@@ -119,4 +119,55 @@ leitor.livrosFavoritos.push ({
 
 /* 8 - Acesse as chaves nome e livrosFavoritos e faça um console.log no seguinte formato: "Julia tem 2 livros favoritos". */
 
-console.log (leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos.')
+console.log (leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos.');
+
+
+// Exercicios Funções
+
+/* 1 - Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.*/
+
+function verificaPalindromo(palavra){
+    let palavraReversa = '';
+
+    for (i = palavra.length -1; i = 0; i -= 1){
+        palavraReversa = palavraReversa + palavraReversa[i];
+    };
+
+    console.log (palavraReversa);
+
+    if (palavra === palavraReversa){
+        return 'True';
+    } else {
+        return 'False'
+    ;}
+};
+let palavra = 'desenvolvimento'
+let palavraReversa = '';
+let palavraSeparada = [];
+
+for (index = 0; index < palavra.length; index += 1){
+    palavraSeparada.push (palavra[index]);
+}
+//console.log (palavraSeparada);
+
+    for (i = palavraSeparada.length -1; i >= 0; i --){
+        palavraReversa += palavraSeparada[i];
+    };
+
+    console.log (palavraReversa);
+
+console.log (verificaPalindromo('arara'))
+
+
+function maiorValor(array){
+    let maiorNumero = 0;
+
+    for (let i in array){
+       if (array[maiorNumero] < array[i]){
+        maiorNumero = i;     
+        } 
+    }
+    return maiorNumero;
+}
+
+console.log (maiorValor([2, 3, 6, 7, 10, 1]));
