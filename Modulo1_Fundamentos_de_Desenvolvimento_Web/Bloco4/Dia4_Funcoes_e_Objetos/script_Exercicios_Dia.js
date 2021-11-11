@@ -128,10 +128,12 @@ console.log (leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros fa
 
 function verificaPalindromo(palavra){
     let palavraReversa = '';
+    let palavraSeparada = [];
+    let arrayInverso = [];
 
-    for (i = palavra.length -1; i = 0; i -= 1){
-        palavraReversa = palavraReversa + palavraReversa[i];
-    };
+    palavraSeparada = palavra.split('');  // separa a string em arrays de cada letra
+    arrayInverso = palavraSeparada.reverse();  // inverte um array, a ultima posição passa para a primeira e vice e versa
+    palavraReversa = arrayInverso.join('');  // une um array no formato de string
 
     console.log (palavraReversa);
 
@@ -141,24 +143,11 @@ function verificaPalindromo(palavra){
         return 'False'
     ;}
 };
-let palavra = 'desenvolvimento'
-let palavraReversa = '';
-let palavraSeparada = [];
-
-for (index = 0; index < palavra.length; index += 1){
-    palavraSeparada.push (palavra[index]);
-}
-//console.log (palavraSeparada);
-
-    for (i = palavraSeparada.length -1; i >= 0; i --){
-        palavraReversa += palavraSeparada[i];
-    };
-
-    console.log (palavraReversa);
 
 console.log (verificaPalindromo('arara'))
 
 
+/* 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor. */
 function maiorValor(array){
     let maiorNumero = 0;
 
@@ -171,3 +160,36 @@ function maiorValor(array){
 }
 
 console.log (maiorValor([2, 3, 6, 7, 10, 1]));
+
+/* 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor. */
+
+function menorValor (valor){
+  let indiceMenorValor = 0;
+
+  for (let index in indiceMenorValor){
+    if (valor[indiceMenorValor] > valor[index]){
+      indiceMenorValor = i;
+    }
+  }
+  return indiceMenorValor;
+}
+
+console.log (menorValor([2, 3, 6, 7, 10, 1]));
+
+
+/* 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.*/
+
+function maiorNome (nomes){
+  let tamanhoNome = nomes[0];
+
+  for (let i in nomes) {
+        if (tamanhoNome.length < nomes[i].length) {
+          tamanhoNome = nomes[i];
+        }
+      }
+  return tamanhoNome;
+    }
+
+  console.log (maiorNome (['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+  
