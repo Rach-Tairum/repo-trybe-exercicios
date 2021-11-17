@@ -21,7 +21,7 @@
   
   .emergency-tasks div {
     height: 198px;
-    background-color: rgb(63, 15, 15);
+    background-color: rgb(192, 188, 181);
   }
   .emergency-tasks h3 {
     color: white;
@@ -37,7 +37,7 @@
   
   .no-emergency-tasks div {
     height: 198px;
-    background-color: rgb(176, 176, 255);
+    background-color: rgb(178, 240, 142);
   }
   
   .no-emergency-tasks h3 {

@@ -1,27 +1,18 @@
-function corTitulo(tag){
-    let titulos1 = document.querySelectorAll(tag);
 
-for(let i in titulos1){
-    titulos1[i].style.color = 'red';
+let titulo1 = document.querySelectorAll(".emergency-tasks h3");
+
+for(let i = 0; i < titulo1.length; i += 1){
+    titulo1[i].style.color = 'red';
 };
-return titulos1
-}
-corTitulo(".emergency-tasks h3")
 
-// function corTitulo2(tag2){
-//     let titulos2 = document.querySelectorAll(tag2);
+let titulo2 = document.querySelectorAll(".no-emergency-tasks h3");
 
-// for(let i in titulos2){
-//     titulos2[i].style.color = 'red';
-// };
-// return titulos2
-// }
-// corTitulo(".no-emergency-tasks h3")
-
+for(let index = 0; index < titulo2.length; index += 1){
+    titulo2[index].style.color = 'darkblue';
+};
   
 
+let footer = document.getElementById("footer-container");
 
-
-// let footer = document.getElementById("footer-container");
-
-// footer.style.backgroundColor = "green"
+footer.style.backgroundColor = "green";
+footer.style.textAlign = "left"
