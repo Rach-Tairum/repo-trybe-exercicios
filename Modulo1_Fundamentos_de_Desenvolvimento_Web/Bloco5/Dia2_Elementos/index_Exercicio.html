@@ -123,10 +123,14 @@
         contagem('nove');
         contagem('dez');
 
-        console.log (lista)
-        
-        
-
+    // 9. Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+    
+    for(let index = 0; index < 3; index += 1){
+        let menorTitulo = document.createElement("h3");
+        menorTitulo.className = 'description';
+        main.appendChild(menorTitulo);
+    }
+    
     </script>
   </body>
 </html>
