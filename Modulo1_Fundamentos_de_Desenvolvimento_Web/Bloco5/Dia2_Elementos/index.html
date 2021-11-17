@@ -84,6 +84,34 @@
         // 12. A partir desse filho criado, acesse terceiroFilho
         let caminho = document.getElementById('primeiroFilhoDoPrimeiroFilhoDoFilho').parentElement.parentElement.nextElementSibling;
         console.log(caminho);
+
+        // 13. Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho.
+        let geral = document.getElementById('pai');
+        let paiMaster = document.getElementById('pai').childNodes;
+        let paiMaster2 = document.getElementById('pai').children
+        
+        for(let i = 0; i < paiMaster.length; i += 1){
+            let elemento = paiMaster[i];
+            if (elemento.id !== "elementoOndeVoceEsta"){
+                geral.removeChild(elemento);
+            }
+        };
+        
+        for(let index = 0; index < paiMaster2.length; index += 1){
+            let elemento2 = paiMaster2[index];
+            if (elemento2.id !== "elementoOndeVoceEsta"){
+                geral.removeChild(elemento2);
+            }
+        };
+
+        let filhoInsistente = paiMaster[1];
+        geral.removeChild(filhoInsistente);
+        
+        let segundaParte = document.getElementById('elementoOndeVoceEsta')
+        let ultimo = segundaParte.lastElementChild
+        segundaParte.removeChild(ultimo)
+         console.log(geral)
+
     </script>
 </body>
 </html>
