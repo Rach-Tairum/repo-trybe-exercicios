@@ -93,7 +93,7 @@
         let secao3 = document.createElement('section');
         secao3.className = 'right-content';
         main.appendChild(secao3);
-        console.log(main)
+        //console.log(main)
 
      // 7. Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
         
@@ -130,6 +130,25 @@
         menorTitulo.className = 'description';
         main.appendChild(menorTitulo);
     }
+    
+    // 10. Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
+      
+    main.removeChild(secao2);
+
+    // 11. Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
+
+    secao3.style.marginRight = "auto";
+
+    // 12. Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+    
+    let father = document.querySelector(".center-content").parentElement;
+    father.style.backgroundColor = 'green';
+
+    // 13. Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+    let removidos = document.getElementsByTagName('li');
+   
+    lista.removeChild(removidos[removidos.length -1])
+    lista.removeChild(removidos[removidos.length -1])
     
     </script>
   </body>
