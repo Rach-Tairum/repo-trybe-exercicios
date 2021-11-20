@@ -170,3 +170,9 @@
     border-radius: 20%;
     margin-left: 50px;
   }
+
+  .itens {
+    margin-top: 20px;
+    list-style: none;
+    color: #777;
+  }

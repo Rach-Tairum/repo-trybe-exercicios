@@ -199,6 +199,7 @@ tarefas('Dias de projeto');
 
         for (let i = 0; i < task.length; i += 1){
             task[i].addEventListener('click', function(){
+                
                 if (selectedTask.length === 0) {
                     task[i].className = 'task selected';
                     
@@ -214,4 +215,67 @@ tarefas('Dias de projeto');
 /* 10. Implemente uma função que adiciona um evento que, ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua tarefa selecionada.
     - Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119) .*/
 
+//     function changeColor(){
+//         let dias = document.getElementsByClassName('day');
+//         let task = document.querySelectorAll('.task'); 
+//         let cor = task.style.backgroundColor;
+//         let selectedTask = document.getElementsByClassName('task selected');
+        
+//         for(let i = 0; i < dias.length; i += 1){
+//             dias[i].addEventListener('click', function(event){
+//             let eventTargetColor = event.target.style.color;
+
+//                 if(selectedTask.length > 0 && eventTargetColor !== cor){
+//                     let color = selectedTask[0].style.backgroundColor;
+//                     event.target.style.color = color;
+//                 } else if (eventTargetColor === cor && selectedTask.length !== 0) {
+//                     event.target.style.color = 'rgb(119,119,119)';
+                      
+//                   }
+
+                
+//         })
+        
+//     }
+// }
+//     changeColor()
+
+/* Bônus: Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto "COMPROMISSOS", adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no botão "ADICIONAR".
+    - Se nenhum caractere for inserido no campo input , a função deve retornar um alert com uma mensagem de erro ao clicar em "ADICIONAR".
     
+    - Ao pressionar a tecla "enter" o evento também deverá ser disparado.*/
+
+    function createList(){
+        let compromisso = document.querySelector(".input-container")
+        
+        let lista = document.createElement('ul')
+        lista.id = 'compromisso'
+        compromisso.appendChild(lista);
+    }
+createList();
+
+    function compromissos(){
+        let lista = document.getElementById('compromisso');
+        let botao = document.getElementById("btn-add");
+        let input = document.getElementById('task-input');
+        
+        botao.addEventListener('click', function(){
+            if (input.value === ''){
+                alert('Erro, nenhum compromisso inserido');
+            } else {
+                let item = document.createElement('li');
+                item.className = 'itens';
+                item.innerHTML = input.value;
+                lista.appendChild(item);
+                input.value = '';
+            }
+        })
+
+        input.addEventListener('keyup', function(event){
+            if(event.key === 'Enter' && input.value === ''){
+                alert('Erro, nenhum compromisso inserido');
+            } 
+        })
+        
+    }
+    compromissos();
