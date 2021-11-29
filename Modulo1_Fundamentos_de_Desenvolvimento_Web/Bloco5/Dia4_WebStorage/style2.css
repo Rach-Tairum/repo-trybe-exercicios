@@ -1,0 +1,25 @@
+.escolhas{
+    padding: 10px;
+}
+
+#usuario{
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+
+#titulo{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    margin-top: 90px;
+    font-size: 4em;
+    
+}
+
+.texto {
+    display: inline-block;
+   width: 500px;
+   text-align: justify;
+   padding: 50px;
+   font-size: 16pt;
+}

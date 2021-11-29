@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Formulário</title>
+</head>
+<body>
+    <main id="main">
+        <form action="" method="get">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <label for="name" class="etiqueta">Nome Completo:</label>
+                    <input type="text" name="nome do usuario" id="name" maxlength="40" required placeholder="Nome">
+                </div>
+                <div>
+                <label for="email" class="etiqueta">E-mail:</label>
+                <input type="email" name="email usuario" id="email" maxlength="50" required placeholder="e-mail para contato">
+                </div>
+
+                <div>
+                <label for="cpf" class="etiqueta">CPF:</label>
+                <input type="text" name="cpf" id="cpf" maxlength="11" required placeholder="CPF">
+                </div>
+
+                <div>
+                <label for="local" class="etiqueta">Endereço:</label>
+                <input type="text" name="endereco usuario" id="local" maxlength="200" required placeholder="Endereço da rua sem cidade ou estado">
+                </div>
+
+                <div>
+                <label for="city" class="etiqueta">Cidade:</label>
+                <input type="text" name="cidade" id="city" maxlength="28" required placeholder="Cidade">
+                </div>
+
+                <div>
+                <label for="estado" class="etiqueta">Estado:</label>
+                <select nome="estado do pais" id="estado">
+                    <option class="nome-estado" disabled selected value >Selecione seu estado</option>
+                    <option class="nome-estado">Acre</option>
+                    <option class="nome-estado">Alagoas</option>
+                    <option class="nome-estado">Amapá</option>
+                    <option class="nome-estado">Amazonas</option>
+                    <option class="nome-estado">Bahia</option>
+                    <option class="nome-estado">Ceará</option>
+                    <option class="nome-estado">Destrito Federal</option>
+                    <option class="nome-estado">Espirito Santo</option>
+                    <option class="nome-estado"> Goiás</option>
+                    <option class="nome-estado">Maranhão</option>
+                    <option class="nome-estado">Mato Grosso</option>
+                    <option class="nome-estado">Mato Grosso do Sul</option>
+                    <option class="nome-estado"> Minas Gerais</option>
+                    <option class="nome-estado">Pará</option>
+                    <option class="nome-estado">Paraíba</option>
+                    <option class="nome-estado">Paraná</option>
+                    <option class="nome-estado">Pernambuco</option>
+                    <option class="nome-estado">Piauí</option>
+                    <option class="nome-estado"> Rio de Janeiro</option>
+                    <option class="nome-estado">Rio Grande do Norte</option>
+                    <option class="nome-estado">Rio Grande do Sul</option>
+                    <option class="nome-estado">Rondônia</option>
+                    <option class="nome-estado">Roraima</option>
+                    <option class="nome-estado">Santa Catarina</option>
+                    <option class="nome-estado">São Paulo</option>
+                    <option class="nome-estado">Sergipe</option>
+                    <option class="nome-estado">Tocantins</option>
+                </select>
+                </div>
+
+                <div>
+                <label for="casa" class="etiqueta">Casa</label>
+                <input type="radio" name="type-place" id="casa" required >
+            
+                <label for="apartamento" class="etiqueta">Apartamento</label>
+                <input type="radio" name="type-place" id="apartamento" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Experiências Anteriores</legend>
+
+                <div>
+                    <label for="curriculo" class="etiqueta">Resumo:</label>
+                    <textarea id="curriculo" maxlength="1000" cols="100" rows="40" required></textarea>
+                </div>
+
+                <div>
+                    <label for="trabalho" class="etiqueta">Cargo:</label>
+                    <input type="text" name="trabalho anterior" id="trabalho" maxlength="40" required placeholder="Posição anterior">
+                </div>
+            
+                <div>
+                    <label for="trabalho2" class="etiqueta">Descrição do cargo:</label>
+                    <input type="text" name="descricao trabalho anterior" id="trabalho2" maxlength="500" required placeholder="Posição anterior">
+                </div>
+
+                <div>
+                    <label for="dataInicio" class="etiqueta">Data de início no trabalho anterior:</label>
+                    <input type="date" name="inicio" id="dataInicio" required >
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <script>
+        function botaoSubmit(){
+            let main = document.getElementById("main")
+            let submit = document.createElement('button')
+            submit.type = 'submit'
+            submit.innerText = "Enviar"
+            main.appendChild(submit)
+        }
+        botaoSubmit()
+    </script>
+</body>
+</html>
