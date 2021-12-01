@@ -1,0 +1,99 @@
+body {
+    background-color: rgb(253, 239, 191);
+    margin: 10px 10px;
+}
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+h2 {
+    font-size: 1.3em;
+    background-color: coral;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 30px 0;
+}
+
+section p {
+    font-size: 15pt;
+}
+
+main figure figcaption {
+    font-size: 12pt;
+}
+
+@media screen and (min-width: 930px) {
+    body{
+        background-color: rgb(253, 231, 156);
+        margin: 12px 12px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    main div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    section p {
+        font-size: 18pt;
+    }
+
+    main figure figcaption {
+        font-size: 14pt;
+    }
+
+    img {
+        max-width: 90%;
+    }
+
+}
+
+@media screen and (min-width: 1440px) and (min-height: 900px) {
+    body{
+        background-color: rgb(255, 215, 83);
+        margin: 20px 20px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    main div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 22pt;
+    }
+
+    main figure figcaption {
+        font-size: 18pt;
+    }
+
+    img {
+        max-width: 100%;
+        margin: 6px;
+    }
+}
