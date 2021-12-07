@@ -145,3 +145,54 @@ function verifica(lesson, chave, valor) {
     }
 }
 verifica(lesson3, 'turno', 'manha')
+
+
+// Bônus
+
+// 1. Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. Use o objeto criado no exercício 5.
+
+const lesson1 = {
+    materia: 'Matemática',
+    numeroEstudantes: 20,
+    professor: 'Maria Clara',
+    turno: 'manhã',
+  };
+  
+  const lesson2 = {
+    materia: 'História',
+    numeroEstudantes: 20,
+    professor: 'Carlos',
+  };
+  
+  const lesson3 = {
+    materia: 'Matemática',
+    numeroEstudantes: 10,
+    professor: 'Maria Clara',
+    turno: 'noite',
+  };
+let allLessons = {}
+
+Object.assign(allLessons, {lesson1, lesson2, lesson3})
+
+function aulasMat(obj) {
+    let alunosMat = 0
+    const array = Object.keys(obj);
+    
+    for (index in array) {
+        if(obj[array[index]].materia === 'Matemática'){
+            alunosMat += obj[array[index]].numeroEstudantes;
+        }
+    }
+    console.log(alunosMat)
+}
+aulasMat(allLessons)
+
+// 2. Crie uma função que deverá retornar um objeto que representa o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes. Use o objeto criado no exercício 5.
+
+// function relatorioProf (obj, prof){
+//     let relatorio = {
+//         nome: prof,
+//         materia: obj[],
+//         estudantes:,
+//     }
+// }
