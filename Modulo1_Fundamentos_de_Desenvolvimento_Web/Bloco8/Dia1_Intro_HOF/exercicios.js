@@ -48,3 +48,32 @@ loteria(3,sera)
 // 3 - Crie uma HOF que receberá três parâmetros. O primeiro será um array de respostas corretas (Gabarito), o segundo será um array de respostas a serem verificadas (respostas da pessoa estudante) e o terceiro é uma função que checa se as respostas estão corretas e faz a contagem da pontuação final recebida pela pessoa estudante. Ao final a HOF deve retornar o total da contagem de respostas certas.
 // Quando a resposta for correta a contagem sobe 1 ponto, quando for incorreta desce 0.5 pontos, e quando não houver resposta ("N.A") não altera-se a contagem.
 
+const nota = (gabarito, resposta) => {
+    let pontuacao = 0;
+    for(let i = 0; i < resposta.length; i += 1){
+        if (gabarito[i] === resposta[i]) {
+            pontuacao += 1
+        } else if (resposta[i] === 'N.A'){
+            pontuacao += 0
+        } else {
+            pontuacao -= 0.5
+        }
+    }
+    return pontuacao
+}
+
+function notaEstudante(gabarito, respostasDadas, pontuação){
+    const notaAluno = pontuação(gabarito,respostasDadas);
+    let respostasCertas = 0
+    for(let i = 0; i < respostasDadas.length; i += 1){
+        if (gabarito[i] === respostasDadas[i]){
+            respostasCertas += 1
+        }
+    }
+
+    console.log(`O aluno forneceu ${respostasCertas} respostas corretas, obtendo assim nota ${notaAluno}.`) 
+}
+
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+notaEstudante(RIGHT_ANSWERS, STUDENT_ANSWERS, nota);
