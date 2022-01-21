@@ -9,6 +9,7 @@ function App() {
         <p>
           Edit Xulabs and save to reload.
         </p>
+        <h1>Hello, world!</h1>
         <a
           className="App-link"
           href="https://reactjs.org"
