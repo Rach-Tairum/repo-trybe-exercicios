@@ -1,13 +1,33 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+}
+h1 {
+    text-align: center;
+    font-size: 58pt;
+    color: blanchedalmond;
+}
+#root {
+    background-image: url(https://cutewallpaper.org/21/pokedex-phone-wallpaper/Pokedex-Wallpaper-46-Group-Wallpapers.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: 30px;
+}
+.todosPokemons {
+    height: 650px;
+    width: 615px;
+    overflow: scroll;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.pokes {
+    display: flex;
+    text-align: center;
+    font-size: 22pt;
+    margin-left: 275px;
+    padding-top: 180px;
+}
+
+.pokes img {
+    margin-left: 15px;
+    height: 200px;
 }
