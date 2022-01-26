@@ -1,0 +1,5 @@
+.App img {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 15px 15px rgba(128, 128, 128, 0.699);
+}
