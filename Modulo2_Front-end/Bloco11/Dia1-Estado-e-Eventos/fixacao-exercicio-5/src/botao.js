@@ -2,9 +2,9 @@ import React from "react";
 
 class Botao extends React.Component {
     render() {
-        const { texto, nomeBotao } = this.props
+        const { texto, nomeBotao, numero} = this.props
         return(
-                <button onClick={texto}>{nomeBotao}</button>
+                <button onClick={texto} style={{backgroundColor: numero}}>{nomeBotao}</button>
         )
     }
 }
