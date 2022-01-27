@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import Input from './Input';
 
 class App extends React.Component {
   constructor() {
@@ -28,13 +29,9 @@ class App extends React.Component {
       <div className="App">
         <form>
           <fieldset>
-            <label>
-              Nome: <input name='nome' type='text' value={this.state.nome} onChange={this.handleChange}></input>
-            </label>
+            <Input name='nome' type='text' funcao={this.handleChange} value={this.state.name} />
+            <Input name='idade' type='number' funcao={this.handleChange} value={this.state.idade} />
 
-            <label>
-              idade: <input name='idade' type='number' value={this.state.idade} onChange={this.handleChange}></input>
-            </label>
             <label>
               Qual seu filme favortito e por que?
               <textarea name='filmeFavorito' value={this.state.filmeFavorito} onChange={this.handleChange}></textarea>
