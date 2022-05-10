@@ -25,10 +25,13 @@ const calculo = (num1, num2, num3) => {
   return promisse;
 };
 
+// exercicio 2
 const a = Math.floor(Math.random() * 100 + 1)
 const b = Math.floor(Math.random() * 100 + 1)
 const c = Math.floor(Math.random() * 100 + 1)
 
 
-calculo(a, b, c).then(value => console.log('resultado: ', value))
-.catch(err => console.log('Erro: ', err));
+// calculo(a, b, c).then(value => console.log('resultado: ', value))
+// .catch(err => console.log('Erro: ', err));
+
+module.exports = calculo;
