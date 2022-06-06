@@ -1,0 +1,15 @@
+{
+  "name": "io-test",
+  "version": "1.0.0",
+  "description": "testes exemplo 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha test.js"
+  },
+  "author": "Rachel",
+  "license": "ISC",
+  "devDependencies": {
+    "sinon": "^14.0.0"
+  }
+}

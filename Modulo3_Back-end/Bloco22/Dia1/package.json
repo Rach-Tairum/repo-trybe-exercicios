@@ -1,0 +1,15 @@
+{
+  "name": "primeiro_script_node",
+  "version": "1.0.0",
+  "description": "Teste script node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Rachel Tairum",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
