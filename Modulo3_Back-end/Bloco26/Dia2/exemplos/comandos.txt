@@ -1,0 +1,6 @@
+npm install -D @tsconfig/node14
+
+touch tsconfig.json
+
+npm i -D @types/node
+
