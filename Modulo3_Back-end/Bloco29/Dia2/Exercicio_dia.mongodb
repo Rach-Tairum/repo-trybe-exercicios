@@ -1,0 +1,81 @@
+use("class");
+
+// Exercicio 1
+// db.superheroes.countDocuments({});
+
+// db.superheroes.find({});
+
+// Exercicio 2 - OK
+// db.superheroes.find({"aspects.height": {$lt: 180}});
+
+// Exercicio 3 - OK
+// db.superheroes.countDocuments({"aspects.height": {$lt: 180}}); 
+
+// Exercicio 4 - OK
+// db.superheroes.countDocuments({"aspects.height": {$lte: 180}});
+
+// Exercicio 5 - OK
+// db.superheroes.find({"aspects.height": {$gte: 200}}).limit(1)
+
+// Exercicio 6 - OK
+// db.superheroes.countDocuments({"aspects.height": {$gte: 200}});
+
+// Exercicio 7 - OK
+// db.superheroes.find({"aspects.eyeColor": {$eq: "green"}});
+
+// Exercicio 8 - OK
+// db.superheroes.countDocuments({"aspects.eyeColor": {$eq: "blue"}});
+
+// Exercicio 9 - OK
+// db.superheroes.find({"aspects.hairColor": 
+//     {$in: ["Black", "No Hair"]}
+//   })
+
+// Exercicio 10 - OK
+// db.superheroes.countDocuments({
+//    "aspects.hairColor": 
+//      {$in: ["Black", "No Hair"]}
+//    })
+
+// Exercicio 11 - OK
+// db.superheroes.countDocuments({$nor: [{"aspects.hairColor": {$in: ["Black", "No Hair"]}}]}) || db.superheroes.countDocuments({ "aspects.hairColor": { $nin: ["black", "No Hair"] } });
+
+// Exercicio 12 - OK
+// db.superheroes.countDocuments({"aspects.height": {$not: {$gt: 180}}});
+
+// Exercicio 13 - OK
+// db.superheroes.find({$nor: [{race: "Human"}, {"aspects.height": {$gt: 180}}]})
+
+// Exercicio 14
+// db.superheroes.find({$and: [
+//   {$or: [
+//     {"aspects.height": 180},
+//     {"aspects.height": 200}
+//   ]},
+//   {publisher: "Marvel Comics"}
+// ]})
+
+// Exercicio 15
+// db.superheroes.find({$and: [
+//   {$and: [
+//     {"aspects.weight": {$gte: 80}},
+//     {"aspects.weight": {$lte: 100}}
+//   ]},
+//   {$or: [
+//     {race: "Human"},
+//     {race: "Mutant"}
+//   ]},
+//   {publisher: {$ne: "DC Comics"}}
+// ]})
+
+// Exercicio 16 - OK
+// db.superheroes.countDocuments({race: {$exists: false}})
+
+// Exercicio 17 - OK
+// db.superheroes.countDocuments({"aspects.hairColor": {$exists: true}})
+
+// Exercicio 18 - OK
+// db.superheroes.deleteOne({publisher: "Sony Pictures"})
+
+// Exercicio 19 - OK
+db.superheroes.deleteMany({publisher: "George Lucas"})
